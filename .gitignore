@@ -1,0 +1,60 @@
+HELP.md
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+# Ignore specific MySQL socket file
+volume-data/mysql_keycloak_data/mysql.sock
+
+# Ignore everything in volume-data directory
+volume-data/
+
+# If you want to ignore all socket files, you could add a wildcard:
+volume-data/**/*.sock
+
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### VS Code ###
+.vscode/
+
+# Ignore all build directories
+**/target/
+**/build/
+
+# Ignore IDE files globally (IntelliJ, VS Code, etc.)
+.idea/
+.vscode/
+
+# Ignore service-specific folders (such as MySQL data)
+api-gateway/volume-data/
+inventory-service/docker/mysql/data/
+
+# Ignore log files, metrics, and other runtime data
+**/*.log
+**/*.sock
+

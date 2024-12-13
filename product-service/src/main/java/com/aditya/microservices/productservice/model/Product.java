@@ -5,6 +5,8 @@ import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.math.BigDecimal;
 
+import javax.imageio.ImageIO;
+
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -22,5 +24,6 @@ public class Product {
   private String name;
   private String description;
   private BigDecimal price;
+  private byte[] image;
 
 }
